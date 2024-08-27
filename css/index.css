@@ -1,0 +1,29 @@
+html,
+body {
+  min-height: 100vh;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.header,
+.footer {
+  /* flex-grow: 0; kann auch weggelassen werden */
+  flex-grow: 0;
+
+  height: 70px;
+  color: #ffffff;
+  background-color: #2487c6;
+}
+
+.content {
+  flex-grow: 1;
+
+  background-color: #f7f7f7;
+  padding: 12px;
+  max-width: 400px;
+  margin: auto;
+}

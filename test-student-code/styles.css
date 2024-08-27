@@ -1,0 +1,113 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 20px;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+.header {
+  height: 220px;
+}
+h1,
+h2 {
+  color: #444;
+  padding-bottom: 5px;
+}
+h1 {
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ddd;
+}
+h2 {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+h3 {
+  border-bottom: 2px solid #ddd;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+pre {
+  background: #fff;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+}
+thead {
+  background-color: #4caf50;
+  color: white;
+}
+thead th {
+  padding: 12px;
+  text-align: left;
+}
+tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+tbody td {
+  padding: 10px;
+  text-align: left;
+}
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.timestamp {
+  font-size: 14px;
+  color: #888;
+  border-bottom: 2px solid #ddd;
+  border-top: 2px solid #ddd;
+  margin-bottom: 10px;
+}
+.dino-image {
+  float: inline-end;
+  height: 156px;
+  margin-left: 24px;
+  transition: all 20s linear;
+}
+.dino-image:hover {
+  cursor: pointer;
+  animation: glowSlow 1.3s linear;
+}
+@keyframes glowSlow {
+  0% {
+    filter: brightness(100%) blur(0px) contrast(100%) saturate(100%)
+      hue-rotate(0deg) invert(0%);
+    transform: rotate(0deg) scale(1);
+  }
+  25% {
+    filter: brightness(120%) blur(3px) contrast(110%) saturate(120%)
+      hue-rotate(45deg) invert(10%);
+    transform: rotate(5deg) scale(1.1);
+  }
+  50% {
+    filter: brightness(150%) blur(5px) contrast(120%) saturate(140%)
+      hue-rotate(90deg) invert(20%);
+    transform: rotate(-5deg) scale(1.2);
+  }
+  75% {
+    filter: brightness(120%) blur(3px) contrast(110%) saturate(120%)
+      hue-rotate(45deg) invert(10%);
+    transform: rotate(5deg) scale(1.1);
+  }
+  100% {
+    filter: brightness(100%) blur(0px) contrast(100%) saturate(100%)
+      hue-rotate(0deg) invert(0%);
+    transform: rotate(0deg) scale(1);
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "ignore": [
+    "shorthand",
+    "order-alphabetical",
+    "ids",
+    "box-sizing",
+    "star-property-hack"
+  ],
+  "warnings": [
+  ],
+  "errors": [
+    "duplicate-properties"
+  ]
+}

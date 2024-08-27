@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TITEL_EINGEBEN</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/promotion.css">
+</head>
+
+<body class="webpage">
+    <div class="header">header</div>
+    <div class="content">
+        <div id="formContainer">
+            <div>
+                Fülle alle Felder aus.
+            </div>
+
+            <form>
+                <input type="text" id="email" placeholder="Email eingeben">
+                <input type="submit" id="submit" value="Absenden">
+            </form>
+        </div>
+
+        <div id="game-container" class="hidden">
+
+            <div class="game-info">
+                Klicke, um zu springen.<br />
+                Weiche den Steinen aus.<br />
+                Erreiche 100 Punkte, um einen Preis zu gewinnen.
+            </div>
+
+            <div id="game">
+                <div id="game-start">
+                    <div class="startScreenText">
+                        Klicke, um das Spiel zu starten.
+                    </div>
+                </div>
+                <div id="game-background"></div>
+                <div id="game-dino"></div>
+                <div id="game-rock"></div>
+                <div id="game-score">0</div>
+            </div>
+
+            <div id="game-end" class="hidden">
+                <div id="game-winner" class="hidden">
+                    ⭐ ⭐ ⭐ Glückwunsch ⭐ ⭐ ⭐ <br />
+                    Du hast mehr als 100 Punkte erzielt.
+                    Wir benachrichtigen dich über deinen Gewinn via Email.
+                </div>
+                Das Spiel ist zu Ende.<br />
+                Klicke auf das Spiel, um erneut zu spielen.
+            </div>
+        </div>
+    </div>
+    <div class="footer">footer</div>
+    <script src="./js/databaseClient.js"></script>
+    <script src="./js/form.js"></script>
+    <script src="./js/game.js"></script>
+</body>
+
+
+</html>

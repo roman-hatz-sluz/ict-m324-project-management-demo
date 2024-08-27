@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>2024/2025 M291 T-Rex-Runner Demo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/common.css" />
+  <link rel="stylesheet" href="./css/index.css" />
+</head>
+
+<body>
+  <div class="header">
+    <div class="header-container">
+    </div>
+    <div class="navigation-container">
+      <a href="./index.html"> <img class="logo" src="./images/logo.png" /></a>
+    </div>
+  </div>
+  <div class="content">
+
+    <div id="game-container">
+      <h4> 2024/2025 M291 T-Rex-Runner Demo</h4>
+      <div class="game-info">
+        Spring über die Tiere und laufe eine neue Bestweite. <br /><br />
+      </div>
+
+      <div id="game">
+        <div id="game-start">
+          <div class="startScreenText">
+            Drücke die Leertaste, um zu springen.
+          </div>
+        </div>
+        <div id="game-background">
+          <div class="background-layer" id="bg-layer-1"></div>
+          <div class="background-layer" id="bg-layer-2"></div>
+        </div>
+        <div id="game-hero"></div>
+        <div id="game-obstacle" class="obstacle-dog"></div>
+
+        <div id="game-score">0</div>
+      </div>
+
+      <div id="game-end" class="hidden"><br />
+        <h4>Game Over</h4>
+        <p> Du bist <span id="game-end-score"></span> gelaufen! </p>
+
+        <p> Deine persönliche Bestweite liegt bei <span id="game-highscore"></span> Meter.</p>
+        <br />
+        Das Spiel ist zu Ende.<br />
+        Drücke die Leertaste, um erneut zu spielen.
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="footer">T-REX-RUNNER |&nbsp;
+    <a target="_blank" href="https://github.com/roman-hatz-sluz/ict-m291-vorlagen/tree/2024-05/t-rex-runner">Source</a>
+  </div>
+  <script src="./js/t-rex-runner.js"></script>
+
+</body>
+
+</html>

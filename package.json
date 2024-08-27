@@ -1,0 +1,20 @@
+{
+  "name": "ICT 291 Code Quality",
+  "description": "",
+  "version": "1.0.0",
+  "scripts": {
+    "css-purify": "node_modules/.bin/purifycss  -ri ./students-code/**/*.css ./students-code/**/*.{html,js}  -o /dev/null",
+    "css-lint": "rm -f output.css; find ./students-code  -name '*.css' -type f -exec cat {} \\; > output.css; node_modules/.bin/csslint --config=.csslint  --quiet ./output.css",
+    "html": "node_modules/.bin/htmlhint --config .htmlhint ./students-code",
+    "js": "node_modules/.bin/eslint ./students-code",
+    "test": "echo '-- HTML --';npm run html; echo '-- CSS Purify --'; npm run css-purify; echo '-- CSS Lint --'; npm run css-lint; echo '-- JS --'; npm run js"
+  },
+  "author": "RHatz",
+  "license": "ISC",
+  "devDependencies": {
+    "csslint": "^1.0.5",
+    "eslint": "^8.43.0",
+    "htmlhint": "^1.1.4",
+    "purify-css": "^1.2.5"
+  }
+}

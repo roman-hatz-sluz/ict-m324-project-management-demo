@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TITEL_EINGEBEN</title>
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/game.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="header-container">
+        <img width="40px" height="40px" src="./images/dino.png" />
+      </div>
+      <div class="navigation-container">
+        <a href="./index.html">Home</a>
+        <a href="./game.html">Game</a>
+      </div>
+    </div>
+    <div class="content">
+      <div id="formContainer">
+        <div>Fülle alle Felder aus, um das Game zu spielen.</div>
+
+        <form>
+          <input type="text" id="email" placeholder="Email eingeben" />
+          <input type="submit" id="submit" value="Absenden" />
+        </form>
+      </div>
+
+      <div id="game-container" class="hidden">THE GAME</div>
+    </div>
+    <div class="footer">footer</div>
+    <script src="./js/databaseClient.js"></script>
+    <script src="./js/userTable.js"></script>
+    <script src="./js/game.js"></script>
+  </body>
+</html>
